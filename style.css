@@ -24,7 +24,7 @@
 html, body {
     width: 100%;
     height: 100%;
-    background-color: #F5F6F8;
+    background-color: var(--body-backgraund);
 }
 
 /* Main wrapper */
@@ -312,8 +312,8 @@ swiper-slide {
 }
 
 .box-jantes h3 {
-    font-size: 18px;
-    font-family: 'inter', sans-serif;
+    font-size: 20px;
+    font-family: 'oswald', sans-serif;
     text-transform: uppercase;
     text-align: center;
     color: var(--black-main);
@@ -321,14 +321,14 @@ swiper-slide {
     margin-right: 10px;
     margin-bottom: 25px;
     margin-top: 15px;
-    letter-spacing: 1px;
+    letter-spacing: 0.5px;
     font-weight: 800;
-    line-height: 22px;
+    line-height: 26px;
 }
 
 /* Section for jantes style end */
 
-
+/* Section for carrosserie style start */
 
 .carrosserie-title {
     width: 100%;
@@ -444,10 +444,10 @@ swiper-slide {
     display: block;
     width: 150px;
     height: 3px;
-    background-color: var(--red-main);
+    background-color: #1e3050;
     position: relative;
     left: 80px;
-    top: 10px;
+    top: 15px;
     border-radius: 5px;
     transition: .3s ease;
 }
@@ -469,7 +469,126 @@ swiper-slide {
     font-family: 'oswald', sans-serif;
     font-weight: 600;
     text-transform: uppercase;
-    background-color: var(--red-main);
+    background-color: #1e3050;
+    color: var(--white-1);
+    padding: 15px;
+    border-bottom-left-radius: 5px;
+    border-bottom-right-radius: 5px;
+    transition: .3s ease;
+}
+
+/* Section for carrosserie style start */
+
+.covering-title {
+        width: 100%;
+    height: 400px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    background-image:
+        linear-gradient(
+            rgba(0, 0, 0, 0.75),
+            rgba(0, 0, 0, 0.75)
+        ),
+        url("./images/covv.webp");
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+    gap: 20px;
+}
+
+.covering-title h2 {
+    font-family: "Oswald", sans-serif;
+    font-size: 32px;
+    letter-spacing: 1.5px;
+    text-transform: uppercase;
+    color: var(--white);
+}
+
+.covering-title h3 {
+    font-family: "Inter", sans-serif;
+    color: var(--white);
+    width: 800px;
+    letter-spacing: 0.5px;
+    line-height: 32px;
+}
+
+.covering-title h2,
+.covering-title h3 {
+    text-shadow: 0 2px 10px rgba(0,0,0,0.4);
+}
+
+.section-for-covering {
+    width: 100%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 60px;
+    margin: 50px auto;
+    padding-bottom: 50px;
+}
+
+.covering-box {
+    width: 320px;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    background-color: var(--white-1);
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    transition: 0.3s ease;
+}
+
+.covering-box img {
+    width: 100%;
+    height: 220px;
+    object-fit: cover;
+}
+
+.covering-box h3 {
+    text-align: center;
+    font-family: 'inter', sans-serif;
+    text-transform: uppercase;
+    font-style: normal;
+    margin: 0 5px 0 5px;
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.covering-box h3::after {
+    content: "";
+    display: block;
+    width: 150px;
+    height: 3px;
+    background-color: #6dae34;
+    position: relative;
+    left: 80px;
+    top: 15px;
+    border-radius: 5px;
+    transition: .3s ease;
+}
+
+.covering-box h4 {
+    font-size: 16px;
+    font-weight: 700;
+    text-align: center;
+    font-family: 'roboto', sans-serif;
+    /* text-transform: uppercase; */
+    font-style: normal;
+    margin: 15px;
+}
+
+.covering-box .btn {
+    width: 100%;
+    text-decoration: none;
+    text-align: center;
+    font-family: 'oswald', sans-serif;
+    font-weight: 600;
+    text-transform: uppercase;
+    background-color: #6dae34;
     color: var(--white-1);
     padding: 15px;
     border-bottom-left-radius: 5px;
