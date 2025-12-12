@@ -268,20 +268,25 @@ swiper-slide {
     display: flex;
     flex-direction: column;
     align-items: center;
-    border: 3px solid var(--red-hover);
+    /* border: 3px solid var(--red-hover); */
     border-radius: 5px;
     background-color: var(--white-1);
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
-    transition: 0.3s ease;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    transition: 0.5s ease;
 }
 
 .box-jantes:hover {
     transform: translateY(-6px);
     box-shadow: 0 12px 30px rgba(0,0,0,0.15);
+    background-color: var(--red-backgraund);
 }
 
 .box-jantes:hover .btn {
-    background-color: #E10600;
+    background-color: var(--body-backgraund);
+    color: var(--black-main);
+}
+
+.box-jantes:hover h3 {
     color: var(--white-1);
 }
 
@@ -308,7 +313,7 @@ swiper-slide {
     text-decoration: none;
     letter-spacing: 0.5px;
     cursor: pointer;
-    transition: background-color 0.3s ease, color 0.3s ease;
+    transition: 0.5s ease;
 }
 
 .box-jantes h3 {
@@ -324,6 +329,7 @@ swiper-slide {
     letter-spacing: 0.5px;
     font-weight: 800;
     line-height: 26px;
+    transition: 0.5s ease;
 }
 
 /* Section for jantes style end */
