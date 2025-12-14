@@ -179,7 +179,7 @@ swiper-slide {
 .slide-2 {
     width: auto;
     height: 500px;
-    background-image: url(./images/Frequently-Asked-Questions-About-Car-Body-Repairs-1024x658.jpg);
+    background-image: url(./images/quality_automotive_paint.jpg);
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
@@ -382,6 +382,7 @@ swiper-slide {
     background-size: cover;
     background-repeat: no-repeat;
     gap: 20px;
+    background-attachment: fixed;
 }
 
 
@@ -531,11 +532,12 @@ swiper-slide {
             rgba(0, 0, 0, 0.75),
             rgba(0, 0, 0, 0.75)
         ),
-        url("./images/covv.webp");
+        url("./images/covering-box-2.jpg");
     background-position: center;
     background-size: cover;
     background-repeat: no-repeat;
     gap: 20px;
+    background-attachment: fixed;
 }
 
 .covering-title h2 {
@@ -689,6 +691,38 @@ swiper-slide {
     font-family: "poppins", "sans-serif";
 }
 
+.contacter-direct {
+    margin-top: 10px;
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+}
+
+.contacter-direct p {
+    font-family: "inter", "sans-serif";
+    color: var(--black-main);
+    font-size: 18px;
+    font-weight: 800;
+}
+
+.contacter-direct-phone-number::after {
+    content: "";
+    display: block;
+    width: 200px;
+    height: 3px;
+    background-color: var(--red-main);
+    position: relative;
+    top: 15px;
+    left: 300px;
+    margin-bottom: 10px;
+}
+
+.contacter-direct .contacter-direct-phone-number {
+    font-family: "oswald", "sans-serif";
+    font-size: 22px;
+    font-weight: 800;
+}
+
 .form-group {
     margin-bottom: 25px;
     position: relative;
@@ -699,16 +733,6 @@ swiper-slide {
     margin-bottom: 8px;
     color: var(--graphite);
     font-weight: 500;
-}
-
-.form-group select {
-    width: 100%;
-    padding: 10px;
-    border: 2px solid #ddd;
-    border-radius: 8px;
-    font-size: 1em;
-    transition: all 0.3s ease;
-    background: rgba(255, 255, 255, 0.9);
 }
 
 .input-group {
@@ -733,6 +757,11 @@ swiper-slide {
     background: rgba(255, 255, 255, 0.9);
 }
 
+.form-control::placeholder {
+    font-family: "poppins", "sans-serif";
+    font-size: 14px;
+}
+
 
 
 .form-control:focus {
@@ -740,6 +769,19 @@ swiper-slide {
     box-shadow: 0 0 10px rgba(30, 60, 114, 0.2);
     outline: none;
 }
+
+.form-group select{
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 8px;
+    font-size: 14px;
+    transition: all 0.3s ease;
+    background: rgba(255, 255, 255, 0.9);
+    font-family: "poppins", "sans-serif";
+    font-weight: 400;
+}
+
 
 .error-message {
     color: #e74c3c;
@@ -765,15 +807,19 @@ swiper-slide {
     color: white;
     border: none;
     border-radius: 8px;
-    font-size: 1.1em;
     cursor: pointer;
     transition: all 0.3s ease;
     margin-top: 20px;
+    font-weight: 700;
+    text-transform: uppercase;
+    font-size: 18px;
+    letter-spacing: 1px;
+    font-family: "oswald", "sans-serif";
+    margin-bottom: 50px;
 }
 
 .submit-btn:hover {
-    background: #2a5298;
-    transform: translateY(-2px);
+    background: var(--graphite);
 }
 
 .success-message {
