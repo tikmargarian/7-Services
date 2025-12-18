@@ -25,3 +25,23 @@ avatars[7].style.backgroundColor = "#ffce40";
 avatars[8].style.backgroundColor = "#8dc63f";
 avatars[9].style.backgroundColor = "#d62f2f";
 // Colors for google avatars
+
+// Navbar hamburger media code
+const navbarItems = document.querySelector(".navbar-items");
+const hamburger = document.querySelector(".navbar-hamburger");
+
+function openNavbar () {
+    hamburger.classList.toggle("active");
+    navbarItems.classList.toggle("active")
+}
+
+function closeNavbar () {
+    hamburger.classList.remove("active");
+    navbarItems.classList.remove("active")
+}
+
+hamburger.addEventListener("click", openNavbar);
+
+document.querySelectorAll(".navbar-items li a").forEach((item) => {
+    item.addEventListener("click", closeNavbar)
+})
