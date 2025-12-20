@@ -1003,7 +1003,7 @@ swiper-slide {
 }
   
 .half {
-    background: linear-gradient(to right, #f5b041 50%, #FFFFFF 50%);
+    background: linear-gradient(to right, #f5b041 70%, #FFFFFF 30%);
     background-clip: text;
     -webkit-text-fill-color: transparent;
 }
@@ -1140,6 +1140,11 @@ swiper-slide {
     color: var(--graphite);
 }
 
+.section-for-contact h4 a {
+    text-decoration: none;
+    color: var(--graphite);
+}
+
 .section-for-contact p {
     font-family: "poppins", "sans-serif";
     color: #666;
@@ -1270,15 +1275,8 @@ swiper-slide {
 
 /* Site header media style start */
 .site-header {
-height: 80px;
+height: 65px;
 padding: 0 25px;
-/* width: 100%;
-height: 60px;
-display: flex;
-justify-content: space-between;
-align-items: center;
-padding: 0 10px;
-background-color: var(--red-backgraund); */
 }
 
 .brand-information {
@@ -1287,38 +1285,25 @@ align-items: flex-start;
 gap: 10px;
 }
 
-/* .brand-information .brand-email-address {
+.brand-information .brand-email-address {
     display: none;
-} */
+}
 
 .brand-number a,
 .brand-email-address a,
 .brand-address a {
-    font-size: 12px;
+    font-size: 13px;
     letter-spacing: 0;
-    /* color: var(--white);
-    text-decoration: none;
-    font-weight: 600;
-    font-family: "roboto", "sans-serif";
-    transition: .3s ease;
-    letter-spacing: 0.5px;
-    text-transform: uppercase; */
 }
 
 .social-media {
-    display: flex;
-    flex-direction: column;
-    gap: 5px;
+    display: none;
 }
 
 /* Header soical media icons */
 .site-header i {
     color: var(--white);
     font-size: 16px;
-}
-
-.social-media i {
-    font-size: 18px;
 }
 /* Site header media style start */
 
@@ -1444,17 +1429,18 @@ gap: 10px;
 
 
 .covering-title h2 {
-    font-size: 30px;
+    font-size: 28px;
     letter-spacing: 1px;
+    padding: 0 5px;
 }
 
 .covering-title h3 {
     font-family: "Inter", sans-serif;
     color: var(--white);
-    width: 350px;
+    width: 320px;
     letter-spacing: 0.5px;
-    line-height: 26px;
-    font-size: 16px;
+    line-height: 22px;
+    font-size: 15px;
 }
 
 .section-for-covering {
@@ -1505,6 +1491,7 @@ gap: 10px;
 }
 
 .map-info {
+    width: 350px;
     font-size: 14px;
     text-align: center;
 }
@@ -1518,4 +1505,12 @@ gap: 10px;
 
 /* Small mobile */
 @media (max-width: 480px) {
+    .carousel .prev, .next {
+        display: none;
+    }
+
+    .reviews {
+        margin: 0 5px;
+        padding: 10px 5px;
+    }
 }
