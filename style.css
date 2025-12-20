@@ -29,7 +29,7 @@ html, body {
 }
 
 /* Main wrapper */
-.main {
+main {
     width: 100%;
 }
 
@@ -279,7 +279,8 @@ swiper-slide {
 }
 
 .box-jantes {
-    width: 320px;
+    width: 100%;
+    max-width: 320px;
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -311,7 +312,8 @@ swiper-slide {
 }
 
 .box-jantes .btn {
-    width: 250px;
+    width: 100%;
+    max-width: 250px;
     border: none;
     border-radius: 10px;
     background-color: var(--red-main);
@@ -402,9 +404,10 @@ swiper-slide {
 }
 
 .carrosserie-title h3 {
+    width: 100%;
+    max-width: 700px;
     font-family: "oswald", sans-serif;
     color: var(--white);
-    width: 700px;
     letter-spacing: 1px;
     line-height: 32px;
     font-size: 25px;
@@ -426,7 +429,8 @@ swiper-slide {
 }
 
 .box-carrosserie {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -543,9 +547,10 @@ swiper-slide {
 }
 
 .covering-title h3 {
+    width: 100%;
+    max-width: 800px;
     font-family: "Inter", sans-serif;
     color: var(--white);
-    width: 800px;
     letter-spacing: 0.5px;
     line-height: 32px;
 }
@@ -566,7 +571,8 @@ swiper-slide {
 }
 
 .covering-box {
-    width: 385px;
+    width: 100%;
+    max-width: 385px;
     display: flex;
     flex-direction: column;
     gap: 15px;
@@ -670,14 +676,15 @@ swiper-slide {
 
 .form-header h2 {
     color: var(--graphite);
-    font-size: 24xp;
+    font-size: 24px;
     font-family: "oswald", "sans-serif";
     text-transform: uppercase;
-    margin: 10px 0 15px 0;
+    margin: 15px 0 15px 0;
 }
 
 .form-header p {
-    width: 700px;
+    width: 100%;
+    max-width: 700px;
     color: #666;
     font-size: 16px;
     font-family: "poppins", "sans-serif";
@@ -685,13 +692,14 @@ swiper-slide {
 }
 
 .contacter-direct {
+    width: 100%;
+    max-width: 350px;
     margin: 0 auto;
-    width: 350px;
     margin-top: 10px;
     display: flex;
     flex-direction: column;
-    gap: 25px;
     text-align: center;
+    gap: 25px;
 }
 
 
@@ -730,10 +738,11 @@ swiper-slide {
 }
 
 .appointment-form {
+    width: 100%;
+    max-width: 650px;
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 650px;
 }
 
 .form-group {
@@ -869,7 +878,7 @@ swiper-slide {
 
 .section-for-brand-info-header h2 {
     font-family: "oswald", "sans-serif";
-    font-weight: 800px;
+    font-weight: 800;
     font-size: 28px;
     color: var(--graphite);
     text-transform: uppercase;
@@ -883,7 +892,8 @@ swiper-slide {
 }
 
 .section-for-brand-info-description-text {
-    width: 600px;
+    width: 100%;
+    max-width: 600px;
     font-family: "inter", "sans-serif";
     font-weight: 600;
     text-align: center;
@@ -899,7 +909,7 @@ swiper-slide {
 
 .pourquoi-nous-choisir-title {
     font-family: "oswald", "sans-serif";
-    font-weight: 800px;
+    font-weight: 800;
     font-size: 28px;
     color: var(--graphite);
     text-transform: uppercase;
@@ -1026,6 +1036,7 @@ swiper-slide {
 
 
 .review {
+    width: 100%;
     min-width: 280px;
     max-width: 320px;
     background: #fff;
@@ -1435,9 +1446,10 @@ gap: 10px;
 }
 
 .covering-title h3 {
+    width: 100%;
+    max-width: 320px;
     font-family: "Inter", sans-serif;
     color: var(--white);
-    width: 320px;
     letter-spacing: 0.5px;
     line-height: 22px;
     font-size: 15px;
@@ -1449,7 +1461,8 @@ gap: 10px;
 }
 
 .covering-box {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 
 /* Section for covering media style end */
@@ -1462,21 +1475,25 @@ gap: 10px;
 }
 
 .form-header p {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     font-size: 16px;
 }
 
 .appointment-form {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 /* Section for a appointment media stye end */
 
 /* Section for a propos de nous media stye start */
 .section-for-brand-info-description-text {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
 }
 .pourquoi-nous-choisir-content {
-    width: 370px;
+    width: 100%;
+    max-width: 370px;
     padding-left: 10px;
 }
 /* Section for a propos de nous media stye start */
@@ -1491,7 +1508,8 @@ gap: 10px;
 }
 
 .map-info {
-    width: 350px;
+    width: 100%;
+    max-width: 350px;
     font-size: 14px;
     text-align: center;
 }

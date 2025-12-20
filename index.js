@@ -1,7 +1,7 @@
 // Code for google avis
 const container = document.querySelector('.reviews');
-        const prev = document.querySelector('.prev');
-        const next = document.querySelector('.next');
+const prev = document.querySelector('.prev');
+const next = document.querySelector('.next');
         
 next.addEventListener('click', () => {
     container.scrollBy({ left: 320, behavior: 'smooth' });
