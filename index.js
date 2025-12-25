@@ -28,24 +28,30 @@ avatars.forEach((avatar, i) => {
 
 
 // Navbar hamburger media code
-const navbarItems = document.querySelector(".navbar-items");
-const hamburger = document.querySelector(".navbar-hamburger");
+document.addEventListener("DOMContentLoaded", function () {
+  const navbarItems = document.querySelector(".navbar-items");
+  const hamburger = document.querySelector(".navbar-hamburger");
 
-function openNavbar () {
+  if (!navbarItems || !hamburger) return;
+
+  function openNavbar() {
     hamburger.classList.toggle("active");
-    navbarItems.classList.toggle("active")
-}
+    navbarItems.classList.toggle("active");
+  }
 
-function closeNavbar () {
+  function closeNavbar() {
     hamburger.classList.remove("active");
-    navbarItems.classList.remove("active")
-}
+    navbarItems.classList.remove("active");
+  }
 
-hamburger.addEventListener("click", openNavbar);
+  hamburger.addEventListener("click", openNavbar);
 
-document.querySelectorAll(".navbar-items li a").forEach((item) => {
-    item.addEventListener("click", closeNavbar)
-})
+  navbarItems.querySelectorAll("a").forEach((item) => {
+    item.addEventListener("click", closeNavbar);
+  });
+});
+
+
 
 // Code for appointment form
 document.addEventListener("DOMContentLoaded", () => {
