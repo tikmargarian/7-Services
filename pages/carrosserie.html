@@ -29,43 +29,31 @@
 
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "Service",
-    "@id": "https://7-services.fr/carrosserie",
-    "name": "Carrosserie automobile",
-    "description": "Réparation après accident, peinture carrosserie, redressage, rénovation carrosserie, remplacement de pare-brise et rénovation des optiques de phares. Atelier situé à Geudertheim
-    , près de Strasbourg.",
-    "serviceType": "Carrosserie automobile",
-    "provider": {
-    "@type": "AutoBodyShop",
-    "name": "7 Services",
-    "telephone": "+33760060006",
-    "address": {
-      "@type": "PostalAddress",
-      "streetAddress": "1 Rue de l'Artisanat",
-      "addressLocality": "Geudertheim",
-      "postalCode": "67170",
-      "addressRegion": "Grand Est",
-      "addressCountry": "FR"
-    }
-    },
-    "areaServed": [
-    { "@type": "City", "name": "Strasbourg" },
-    { "@type": "AdministrativeArea", "name": "Eurométropole de Strasbourg" }
-    ],
-    "offers": {
-    "@type": "Offer",
-    "priceSpecification": {
-      "@type": "PriceSpecification",
-      "price": "0",
-      "priceCurrency": "EUR",
-      "name": "Devis gratuit"
-    },
-    "availability": "https://schema.org/InStock",
-    "url": "https://7-services.fr/carrosserie"
-    }
+        "@context": "https://schema.org",
+        "@type": "Service",
+        "@id": "https://7-services.fr/carrosserie#service",
+        "name": "Carrosserie automobile",
+        "serviceType": "Carrosserie automobile",
+        "description": "Réparation après accident, peinture carrosserie, redressage, rénovation carrosserie, remplacement de pare-brise et rénovation des optiques de phares. Atelier situé à Geudertheim, près de Strasbourg.",
+        "provider": {
+            "@type": "AutoBodyShop",
+            "@id": "https://7-services.fr#autobodyshop"
+            },
+        "areaServed": [
+            { "@type": "City", "name": "Strasbourg" },
+            { "@type": "AdministrativeArea", "name": "Eurométropole de Strasbourg" }
+        ],
+        "offers": {
+            "@type": "Offer",
+            "url": "https://7-services.fr/carrosserie",
+            "price": "0",
+            "priceCurrency": "EUR",
+            "availability": "https://schema.org/InStock"
+        }
     }
 </script>
+
+
 </head>
 <body>
     <main>
@@ -102,7 +90,7 @@
         <nav class="site-navbar">
 
             <div class="navbar-left">
-                <a href="/" class="brand-logo" aria-label="Accueil 7 Services">
+                <a href="https://7-services.fr" class="brand-logo" aria-label="Accueil 7 Services">
                     <img src="../images/logo-7-services-for-navbar.png" alt="Logo 7 Services">
                 </a>
             </div>

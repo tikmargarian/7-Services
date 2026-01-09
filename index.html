@@ -27,30 +27,35 @@
 
     <script type="application/ld+json">
     {
-    "@context": "https://schema.org",
-    "@type": "AutoBodyShop",
-    "@id": "https://7-services.fr",
-    "name": "7 Services",
-    "image": "https://7-services.fr/images/logo-7-services.png",
-    "url": "https://7-services.fr",
-    "telephone": "+33760060006",
-    "priceRange": "€€",
-    "address": {
-    "@type": "PostalAddress",
-    "streetAddress": "1 Rue de l'Artisanat",
-    "addressLocality": "Geudertheim",
-    "postalCode": "67170",
-    "addressRegion": "Grand Est",
-    "addressCountry": "FR"
-    },
-    "geo": {
-    "@type": "GeoCoordinates",
-    "latitude": 48.7200,
-    "longitude": 7.7500
-    },
-    "areaServed": "Strasbourg"
+        "@context": "https://schema.org",
+        "@type": "AutoBodyShop",
+        "@id": "https://7-services.fr#autobodyshop",
+        "name": "7 Services",
+        "url": "https://7-services.fr",
+        "telephone": "+33760060006",
+        "address": {
+            "@type": "PostalAddress",
+            "streetAddress": "1 Rue de l'Artisanat",
+            "addressLocality": "Geudertheim",
+            "postalCode": "67170",
+            "addressRegion": "Grand Est",
+            "addressCountry": "FR"
+        },
+        "areaServed": [
+            { "@type": "City", "name": "Strasbourg" },
+            { "@type": "AdministrativeArea", "name": "Eurométropole de Strasbourg" }
+        ],
+        "openingHoursSpecification": [
+            {
+            "@type": "OpeningHoursSpecification",
+            "dayOfWeek": ["Monday","Tuesday","Wednesday","Thursday","Friday"],
+            "opens": "08:30",
+            "closes": "18:00"
+            }
+        ]
     }
-    </script>
+</script>
+
 
 </head>
 <body>
@@ -89,7 +94,7 @@
         <nav class="site-navbar">
 
             <div class="navbar-left">
-                <a href="/" class="brand-logo" aria-label="Accueil 7 Services">
+                <a href="https://7-services.fr" class="brand-logo" aria-label="Accueil 7 Services">
                     <img src="images/logo-7-services-for-navbar.png" alt="Logo 7 Services">
                 </a>
             </div>
