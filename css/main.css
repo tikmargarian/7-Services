@@ -187,6 +187,15 @@ swiper-slide {
     background-repeat: no-repeat;
 }
 
+.slide-4 {
+    width: 100%;
+    height: 500px;
+    background-image: url(../images/services-pneumatiaue.jpg);
+    background-position: center;
+    background-size: cover;
+    background-repeat: no-repeat;
+}
+
 .swiper-content-backgraund {
     width: 100%;
     height: 100%;
